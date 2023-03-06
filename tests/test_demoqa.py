@@ -19,7 +19,7 @@ def test_demoqa():
     browser.element('.react-datepicker__day--020').should(have.text('20')).click()
     browser.element('#subjectsInput').should(be.blank).type('physics').press_enter()
     browser.element('[for="hobbies-checkbox-2"]').click()
-    browser.element('#uploadPicture').send_keys(os.getcwd() + '/Picture/VYqbjvKLSlU.jpg')
+    browser.element('#uploadPicture').send_keys(os.getcwd() + '/picture/VYqbjvKLSlU.jpg')
     browser.element('#currentAddress').should(be.blank).type('address')
     browser.element('#react-select-3-input').should(be.blank).type('Haryana').press_enter()
     browser.element('#react-select-4-input').should(be.blank).type('Karnal').press_enter()
