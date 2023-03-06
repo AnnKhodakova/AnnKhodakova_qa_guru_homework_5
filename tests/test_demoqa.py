@@ -35,7 +35,7 @@ def test_demoqa():
     browser.all('tr').element_by_its('td', have.text('Date of Birth')).all('td')[1].should(have.text('20 March,2023'))
     browser.all('tr').element_by_its('td', have.text('Subjects')).all('td')[1].should(have.text('Physics'))
     browser.all('tr').element_by_its('td', have.text('Hobbies')).all('td')[1].should(have.text('Reading'))
-    browser.all('tr').element_by_its('td', have.text('picture')).all('td')[1].should(have.text('VYqbjvKLSlU.jpg'))
+    browser.all('tr').element_by_its('td', have.text('Picture')).all('td')[1].should(have.text('VYqbjvKLSlU.jpg'))
     browser.all('tr').element_by_its('td', have.text('Address')).all('td')[1].should(have.text('address'))
     browser.all('tr').element_by_its('td', have.text('State and City')).all('td')[1].should(have.text('Haryana Karnal'))
     browser.element('#closeLargeModal').click()
